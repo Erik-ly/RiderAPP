@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacingSize">
+
+    <TextView
+        android:id="@+id/tv_billTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="billTime"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorAuxiliary" />
+
+    <TextView
+        android:id="@+id/tv_billName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="billName"
+        android:textSize="@dimen/emphasize_text"
+        android:textColor="@color/colorTitle"
+        android:layout_below="@+id/tv_billTime"/>
+
+    <TextView
+        android:id="@+id/tv_billOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="billOrderId"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorAuxiliary"
+        android:layout_below="@+id/tv_billName"/>
+
+    <ImageView
+        android:id="@+id/iv_bill_arrow"
+        android:layout_width="@dimen/titleSize"
+        android:layout_height="@dimen/titleSize"
+        android:src="@drawable/icon_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_billMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="billMoney"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/colorTitle"
+        android:layout_toLeftOf="@+id/iv_bill_arrow"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/spacingSize"/>
+
+</RelativeLayout>

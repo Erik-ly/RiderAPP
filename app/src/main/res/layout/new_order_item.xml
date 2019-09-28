@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacingSize"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_throwOut"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_throwout"
+            android:layout_marginLeft="@dimen/spacingSize"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_distributionFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计配送费6.9元"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineSize"
+        android:background="@color/colorBackground"
+        android:layout_marginTop="@dimen/spacingSize" />
+
+    <LinearLayout
+        android:id="@+id/ll_orderInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/spacingSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pickupDistance"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="0000m"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorAuxiliary"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="取货"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorAuxiliary"
+                android:layout_below="@+id/tv_pickupDistance"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家名字"
+                android:textSize="@dimen/emphasize_text"
+                android:textColor="@color/colorTitle"
+                android:layout_toRightOf="@+id/tv_pickupDistance"/>
+
+            <TextView
+                android:id="@+id/tv_businessAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家地址"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorAuxiliary"
+                android:layout_toRightOf="@+id/tv_pickupDistance"
+                android:layout_below="@+id/tv_businessName"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:background="@color/colorAuxiliary"
+            android:layout_marginLeft="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_deliveryDistance"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="0000m"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorAuxiliary"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="送货"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorAuxiliary"
+                android:layout_below="@+id/tv_deliveryDistance"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户地址"
+                android:textSize="@dimen/emphasize_text"
+                android:textColor="@color/colorTitle"
+                android:layout_toRightOf="@+id/tv_deliveryDistance"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineSize"
+        android:background="@color/colorBackground"
+        android:layout_marginTop="@dimen/spacingSize" />
+
+    <Button
+        android:id="@+id/bt_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接单"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_round_button"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/spacingSize"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_grab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="抢单"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_round_button"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/spacingSize"
+        android:visibility="gone"/>
+
+</LinearLayout>

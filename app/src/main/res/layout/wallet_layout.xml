@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:api="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/spacingSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacingSize"
+            android:layout_marginTop="@dimen/spacingSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额(元)"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_myBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="50dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_withdraw"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_withdraw"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layoutSpacingSize"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/layoutSpacingSize">
+
+        <ImageView
+            android:id="@+id/iv_verticalLine"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_verticalline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日概览"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorTitle"
+            android:layout_toRightOf="@+id/iv_verticalLine" />
+
+        <TextView
+            android:id="@+id/tt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/button_text"
+            android:layout_below="@+id/iv_verticalLine"
+            android:paddingLeft="@dimen/spacingSize"
+            android:layout_marginTop="@dimen/spacingSize"/>
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/button_text"
+            android:layout_below="@+id/iv_verticalLine"
+            android:layout_toRightOf="@+id/tt_income"
+            android:layout_marginTop="@dimen/spacingSize" />
+
+        <TextView
+            android:id="@+id/tt_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:textColor="@color/colorTitle"
+            android:textSize="@dimen/button_text"
+            android:layout_below="@+id/iv_verticalLine"
+            android:layout_toRightOf="@+id/tv_income"
+            android:layout_marginLeft="@dimen/layoutSpacingSize"
+            android:layout_marginTop="@dimen/spacingSize"/>
+
+        <TextView
+            android:id="@+id/tv_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/button_text"
+            android:layout_below="@+id/iv_verticalLine"
+            android:layout_toRightOf="@+id/tt_expenditure"
+            android:layout_marginTop="@dimen/spacingSize" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_historicalBill"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/icon_arrow"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/spacingSize"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="查看历史账单"-->
+            <!--android:textSize="@dimen/titleSize"-->
+            <!--android:textColor="@color/colorAuxiliary"-->
+            <!--android:layout_toLeftOf="@id/iv_historicalBill"-->
+            <!--android:layout_centerVertical="true"/>-->
+
+    </RelativeLayout>
+
+    <!-- 加载动画 -->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        api:indicatorName="BallClipRotatePulseIndicator"
+        api:indicatorColor="@color/colorPrimary"/>
+
+    <ListView
+        android:id="@+id/lv_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layoutSpacingSize"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+    </ListView>
+
+</LinearLayout>

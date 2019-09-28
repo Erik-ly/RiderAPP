@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+
+                android:id="@+id/rl_monthOrderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_monthOrderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单"
+                    android:textColor="@color/colorLight"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/tv_monthOrderNum"
+                    android:layout_alignBottom="@+id/tv_monthOrderNum"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成单数"
+                android:textColor="@color/colorAuxiliary"
+                android:textSize="@dimen/titleSize"
+                android:layout_below="@+id/rl_monthOrderNum"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+
+                android:id="@+id/rl_monthWarnNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_monthWarnNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    android:textColor="@color/colorLight"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/tv_monthWarnNum"
+                    android:layout_alignBottom="@+id/tv_monthWarnNum"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警告次数"
+                android:textColor="@color/colorAuxiliary"
+                android:textSize="@dimen/titleSize"
+                android:layout_below="@+id/rl_monthWarnNum"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacingSize">
+
+        <TextView
+            android:id="@+id/tv_monthRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月排名：第 1 名"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorTitle" />
+
+    </LinearLayout>
+
+</LinearLayout>

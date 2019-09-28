@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@color/colorBackground">
+
+    </solid>
+
+    <corners
+        android:topLeftRadius="@dimen/button_rounded_arc"
+        android:topRightRadius="@dimen/button_rounded_arc"
+        android:bottomLeftRadius="@dimen/button_rounded_arc"
+        android:bottomRightRadius="@dimen/button_rounded_arc">
+
+    </corners>
+
+</shape>

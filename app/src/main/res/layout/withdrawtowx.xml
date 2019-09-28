@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_withdrawToWX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_wxPayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓        名"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_wxPayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAuxiliary"
+                android:hint="@string/wd_hint_name"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:textSize="@dimen/titleSize"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_weChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微  信  号"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_weChatId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAuxiliary"
+                android:hint="请输入微信号"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:textSize="@dimen/titleSize"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_wxPayAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wd_tt_wxPayAmount"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_wxPayAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number|numberDecimal"
+                android:hint="@string/wd_et_wxPayAmount"
+                android:textSize="@dimen/titleSize"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:textColor="@color/colorAuxiliary"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <LinearLayout
+            android:id="@+id/ll_withdrawPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现密码"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_withdrawPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAuxiliary"
+                android:hint="请输入提现密码"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:textSize="@dimen/titleSize"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="@dimen/layout_text_margin"
+            android:layout_marginRight="@dimen/layout_text_margin"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <Button
+            android:id="@+id/bt_wxPayWithdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:text="@string/wd_bt_wxPayWithdraw"
+            android:textSize="@dimen/button_text"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_round_button"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/bt_wxLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:text="@string/wd_bt_wxLogin"
+            android:textSize="@dimen/button_text"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_round_button"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

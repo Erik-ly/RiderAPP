@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_statisticTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="配送统计"
+        android:textSize="20sp"
+        android:textColor="#0033CC"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_charts"-->
+        <!--android:layout_width="2000dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/tv_statisticTitle">-->
+
+        <!--<com.github.mikephil.charting.charts.BarChart-->
+            <!--android:id="@+id/BarChart_useTime"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"/>-->
+
+    <!--</LinearLayout>-->
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/BarChart_useTime"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_statisticTitle"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_useTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配送各阶段用时（单位：分钟）"
+        android:textSize="15sp"
+        android:textColor="#4169E1"
+        android:layout_below="@+id/BarChart_useTime"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bc_orderNum"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_useTime"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_orderNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="各月接单量（单位：单）"
+        android:textSize="15sp"
+        android:textColor="#4169E1"
+        android:layout_below="@+id/bc_orderNum"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bc_disMoney"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_orderNum"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_disMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="各月所得配送费（单位：元）"
+        android:textSize="15sp"
+        android:textColor="#4169E1"
+        android:layout_below="@+id/bc_disMoney"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bt_selectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  选择时间  "
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#3399CC"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

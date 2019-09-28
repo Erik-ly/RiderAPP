@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacingSize"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.bophia.erik.ykxrider.utils.MyWebView
+            android:id="@+id/wv_userAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </com.bophia.erik.ykxrider.utils.MyWebView>
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="@dimen/spacingSize"
+            android:layout_toRightOf="@+id/wv_userAvatar"/>
+
+        <TextView
+            android:id="@+id/tv_evaluationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-11-10 10:32"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/colorAuxiliary"
+            android:layout_marginLeft="@dimen/spacingSize"
+            android:layout_below="@+id/tv_userName"
+            android:layout_toRightOf="@+id/wv_userAvatar"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_evaluationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="态度极好"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/colorEmphasize"
+        android:layout_marginTop="@dimen/little_spacing_size"/>
+
+    <TextView
+        android:id="@+id/tv_evaluationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评价评价评价"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/colorTitle"
+        android:layout_marginTop="@dimen/little_spacing_size"/>
+
+    <TextView
+        android:id="@+id/tv_viewOrderInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看本单详情 > >"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/little_spacing_size"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">YKXRider</string>
+    <string name="title_new_order">新订单</string>
+    <string name="title_hall">大厅</string>
+    <string name="title_distribution">配送</string>
+    <string name="title_done_distribution">已完成</string>
+    <string name="title_mine">我的</string>
+
+    <!--线上服务器地址-->
+    <!--<string name="httpsUrl">https://www.bophia.com/YeekesonServer/service/</string>-->
+
+    <!--一刻行服务器地址-->
+    <!--<string name="httpsUrl">https://www.yeekeson.com/YeekesonServer/service/</string>-->
+
+    <!--办公室本地服务器地址-->
+    <string name="httpsUrl">http://192.168.1.21:8080/YeekesonServer/service/</string>
+
+    <!--家本地服务器地址-->
+    <!--<string name="httpsUrl">http://192.168.3.5:8080/YeekesonServer/service/</string>-->
+
+    <!--WebSocket服务器地址-->
+    <!--<string name="webSocketURL">ws://192.168.1.20:8080/YeekesonServer/example/ws</string>-->
+
+    <!--WebSocket服务器地址-->
+    <string name="webSocketURL">ws://192.168.1.21:8080/YeekesonServer/service/WebSocketService</string>
+
+    <!--WebSocket线上服务器地址-->
+    <!--<string name="DEF_RELEASE_URL">ws://192.168.1.21:8080/YeekesonServer/example/ws</string>-->
+
+    <!--匿名用户头像地址-->
+    <string name="userAvatar">http://www.yeekeson.com/YeekesonServer/images/icon.png</string>
+
+    <!--微信模板消息地址-->
+    <string name="messageUrl">https://bophia.com/YeekesonServer/service/SendMessage</string>
+
+    <!--高德地图地理编码地址-->
+    <string name="AMapUrl">https://restapi.amap.com/v3/geocode/geo</string>
+    <!--高德地图web应用key-->
+    <string name="AMapWebKey">7cb25105365180941f1b7b5a6503031b</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--“我的”界面-->
+    <string name="wallet">钱包</string>
+    <string name="doneOrder">已完成订单</string>
+    <string name="activityCenter">活动中心</string>
+    <string name="helpCenter">帮助中心</string>
+    <string name="feedback">意见反馈</string>
+    <string name="settingInfo">设置</string>
+
+    <!--“提现”界面-->
+    <string name="wd_name">姓        名</string>
+    <string name="wd_hint_name">微信真实姓名</string>
+    <string name="wd_tt_wxPayAmount">提现金额</string>
+
+    <string name="wd_et_wxPayAmount">请输入提现金额</string>
+    <string name="wd_bt_wxPayWithdraw">提现</string>
+    <string name="wd_bt_wxLogin">微信登录</string>
+
+
+
+<!--定位相关-->
+<string name="notifyTitle">提示</string>
+<string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+<string name="cancel">取消</string>
+<string name="setting">设置</string>
+<!--定位相关-->
+
+    </resources>

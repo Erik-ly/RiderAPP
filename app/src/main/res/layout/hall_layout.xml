@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:background="@drawable/bg_hallnoorder">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sr_hall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_hallOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorBackground"
+            android:dividerHeight="@dimen/spacingSize">
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

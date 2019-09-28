@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/titleSize"
+            android:text="goodsName"
+            android:textColor="@color/colorPrimary" />
+
+        <WebView
+            android:id="@+id/wv_goodsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal">
+
+        </WebView>
+
+        <RadioGroup
+            android:id="@+id/rg_businessInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/little_spacing_size"
+            android:layout_marginRight="@dimen/little_spacing_size"
+            android:orientation="vertical">
+
+        </RadioGroup>
+
+        <LinearLayout
+
+            android:id="@+id/ll_paymentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/little_spacing_size"
+            android:layout_marginRight="@dimen/little_spacing_size"
+            android:gravity="center_horizontal"
+            android:background="@color/littlePrimary"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付金额：¥"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/titleSize"/>
+
+            <EditText
+                android:id="@+id/et_paymentAmount"
+                android:layout_width="100dp"
+                android:textColor="@color/colorAccent"
+                android:inputType="number|numberDecimal"
+                android:theme="@style/MyEditText"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/titleSize"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

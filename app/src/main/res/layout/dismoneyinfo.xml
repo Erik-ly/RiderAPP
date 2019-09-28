@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dismoneyinfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tt_disMoneyInfo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="配送费用说明"-->
+        <!--android:textColor="#0033CC"-->
+        <!--android:textStyle="bold"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.配送费说明"
+        android:textSize="20sp"
+        android:textColor="#4169E1"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        各时间段的配送费用如图 1 所示，以完成配送时间计算。"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dismoneyinfo2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="图 1 各时间段的配送费用"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.处罚说明"
+        android:textSize="20sp"
+        android:textColor="#4169E1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        规定完成配送时间应该距离订单时间15分钟内，如果超过0~5分钟（即：距订单时间15~20分钟）则警告一次；如果超过5~10分钟（即：距订单20~25分钟）无配送费，警告一次；如果超过10分钟以上（即：距订单时间25分钟以上）罚款￥50元，警告一次。"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        警告次数每月清零，每月警告次数达到5次扣￥100元，达到10次扣200元。"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>

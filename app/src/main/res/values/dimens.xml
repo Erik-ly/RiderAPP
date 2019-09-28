@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--字号-->
+    <!--文字字号-->
+    <dimen name="textSize">12sp</dimen>
+
+    <!--页面标题字号-->
+    <dimen name="titleSize">16sp</dimen>
+    <!--<dimen name="titleSize">18sp</dimen>-->
+
+    <!--按钮文字字号-->
+    <dimen name="button_text">18sp</dimen>
+
+    <!--强调文字字号-->
+    <dimen name="emphasize_text">20sp</dimen>
+
+    <!--radioButton文字字号-->
+    <dimen name="radioButton_text">8sp</dimen>
+
+    <!--布局-->
+    <!--布局字号-->
+    <dimen name="layoutSize">40dp</dimen>
+
+    <!--小图标大小-->
+    <dimen name="icon_size">18dp</dimen>
+
+    <!--圆圈大小：“取”、“送”-->
+    <dimen name="circle_size">25dp</dimen>
+
+    <!--订单详情间隔大小-->
+    <dimen name="orderInfo_spacing_size">5dp</dimen>
+
+    <!--小的间隔：评论-->
+    <dimen name="little_spacing_size">5dp</dimen>
+
+    <!--箭头大小-->
+    <dimen name="arrow_size">13dp</dimen>
+
+    <!--间距-->
+    <!--间距大小-->
+    <dimen name="spacingSize">15dp</dimen>
+
+    <!--间距大小-->
+    <dimen name="pageMarginsSize">20dp</dimen>
+
+    <!--布局间距大小-->
+    <dimen name="layoutSpacingSize">10dp</dimen>
+
+    <!--布局缩进-->
+    <dimen name="layout_margin">20dp</dimen>
+
+    <!--布局文字缩进-->
+    <dimen name="layout_text_margin">30dp</dimen>
+
+    <!--横线大小-->
+    <dimen name="lineSize">1dp</dimen>
+
+    <!--圆角弧度-->
+    <!--布局圆角弧度-->
+    <dimen name="layout_rounded_arc">10dp</dimen>
+
+    <!--按钮圆角弧度-->
+    <dimen name="button_rounded_arc">5dp</dimen>
+
+    <!--边框矩形宽度-->
+    <dimen name="frame_width">1dp</dimen>
+
+    <!--actionBar高度-->
+    <dimen name="actionBar_size">44dp</dimen>
+
+</resources>

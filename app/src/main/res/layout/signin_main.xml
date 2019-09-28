@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signin_background"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:src="@drawable/icon"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="一刻行骑手"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:paddingBottom="10dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_round_layout"
+        android:layout_marginTop="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/tt_signInPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手 机 号"
+                android:textSize="20sp"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_signInPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tt_signInPhone"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:textColor="@color/colorTitle"
+                android:layout_centerVertical="true"
+                android:hint="请输入手机号"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/tt_signInPsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密      码"
+                android:textColor="@color/colorTitle"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_singInPsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@+id/tt_signInPsd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:hint="请输入您的密码"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/tt_sivCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="验 证 码"
+                android:textSize="20sp"
+                android:textColor="@color/colorTitle"/>
+
+            <EditText
+                android:id="@+id/et_sivCode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tt_sivCode"
+                android:layout_marginLeft="@dimen/spacingSize"
+                android:layout_centerVertical="true"
+                android:hint="验证码" />
+
+            <ImageView
+                android:id="@+id/im_sivCode"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vcodebg"
+                android:layout_toRightOf="@+id/et_sivCode"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineSize"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginBottom="@dimen/spacingSize"
+            android:background="@color/colorBackground"/>
+
+        <Button
+            android:id="@+id/bt_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_signin_button"
+            android:text="登 陆"
+            android:textSize="@dimen/button_text"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/spacingSize"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingSize"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="@dimen/spacingSize">
+
+            <TextView
+                android:id="@+id/tv_forgetPsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？"
+                android:textSize="18sp"
+                android:textColor="@color/colorAuxiliary"
+                android:gravity="right"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

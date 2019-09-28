@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--主题色：主色调，突出文字、按钮、icon等-->
+    <color name="colorPrimary">#3E80CB</color>
+
+    <color name="littlePrimary">#95c5fb</color>
+
+    <!--系统状态栏颜色-->
+    <color name="colorPrimaryDark">#3E80CB</color>
+
+    <!--系统按钮颜色-->
+    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorAccent">#3E80CB</color>-->
+
+    <!--绿色-->
+    <color name="colorGreen">#4CD469</color>
+
+    <!--红色-->
+    <color name="colorRed">#FF6666</color>
+
+    <!--灰色-->
+    <color name="colorGray">#999999</color>
+
+    <!--标题颜色-->
+    <color name="colorTitle">#333333</color>
+
+    <!--辅助颜色，次级标题使用色-->
+    <color name="colorAuxiliary">#666666</color>
+
+    <!--选中时背景色-->
+    <color name="colorSelected">#F5F5F5</color>
+
+    <!--背景颜色-->
+    <color name="colorBackground">#EEEEEE</color>
+
+    <!--白色字体，反差背景色中的重要文字，标题-->
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--强调字体-->
+    <color name="colorEmphasize">#EC823C</color>
+
+    <!--最次级颜色，“单”、“次”-->
+    <color name="colorLight">#999999</color>
+
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:api="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- 加载动画 -->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        api:indicatorName="BallClipRotatePulseIndicator"
+        api:indicatorColor="@color/colorPrimary"/>
+
+    <ListView
+        android:id="@+id/lv_historyOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorBackground"
+        android:dividerHeight="@dimen/spacingSize">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_aliPayId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝账号："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_aliPayId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="支付宝邮箱或手机号"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_aliPayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真 实 姓 名："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_aliPayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="支付宝真实姓名"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_aliPayAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提 现 金 额：¥"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_aliPayAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入提现金额"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额最多可提现"
+            android:textSize="15sp"
+            android:textColor="#808080"/>
+
+        <TextView
+            android:id="@+id/tv_wdBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥balance元"
+            android:textSize="15sp"
+            android:textColor="#808080"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_aliPayRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注："
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_aliPayRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="限20个汉字"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
